@@ -1,4 +1,5 @@
 import * as request from 'superagent'
+import {PictureDisplayed} from "../containers/PictureDisplayed"
 
 const baseUrl = 'https://dog.ceo/api/breeds/image/random'
 

@@ -1,14 +1,38 @@
-//import {  } from '../actions'
+//import {  } from
+//import {PictureDisplayed}  from './containers/PictureDisplayed'
+import {LIKE} from '../actions/actions'
+
 
 const initialState = {}
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    // case ACTION_NAME :
-    //     return
+    case LIKE :
+    const step1 = action.payload
+    console.log(step1)
+
+    const name = step1.split("/")
+
+    const breed = name[4]
+    console.log(breed)
 
 
-    default :
+
+    return [...state, breed]
+
+
+
+    default:
+
       return state
   }
 }
+
+
+
+
+
+
+
+
+//<button onClick= { () => this.like(this.props.pictureDisplayed)}>LIKE</button>
