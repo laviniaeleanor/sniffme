@@ -2,12 +2,18 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-const mapStateToProps = (reduxState) => {
 
-    return {
-    component: reduxState.component
-    }
+
+export class LikeButton extends PureComponent {
+  newPicture() {
+    console.log('test')
+  }
+
+  render() {
+    return (
+      <div>
+        <button type="button" onClick={() => this.newPicture()}>SMELLS GOOOOOOOOD!</button>
+      </div>
+    );
+  }
 }
-
-
-export default connect(mapStateToProps)(Component)
