@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Page from './components/Page'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
+import {LikeButton} from './containers/LikeButton'
+import {DislikeButton} from './containers/DislikeButton'
+
 
 
 
@@ -12,6 +15,8 @@ class App extends Component {
             <div>
                 <Route exact path="/sniffme" component={Page} />
                 <Route exact path="/" render={ () => <Redirect to="/sniffme" /> } />
+            <LikeButton/>
+            <DislikeButton/>
             </div>
         </Router>
 )
