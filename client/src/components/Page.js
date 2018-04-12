@@ -1,14 +1,24 @@
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import React, { Component } from 'react'
+// import PropTypes from 'prop-types'
+// import { connect } from 'react-redux'
+// import {Link} from 'react-router-dom'
+import {PictureDisplayed} from '../containers/PictureDisplayed.js'
 
+export default class Page extends Component {
 
-const mapStateToProps = (reduxState) => {
+  render() {
+    return (
+        <div className="Page">
+            <h1>Sniff me</h1>
+            <PictureDisplayed />
 
-    return {
-    component: reduxState.component
-    }
+        </div>
+    )
+  }
 }
 
-
-export default connect(mapStateToProps)(Component)
+// const mapStateToProps = function (state) {
+// 	return {
+//
+// 	}
+// }
