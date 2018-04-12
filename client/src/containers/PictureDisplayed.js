@@ -20,13 +20,16 @@ export class PictureDisplayed extends PureComponent {
 
  render() {
 
-   return (
-       <div className="PictureDisplayed">
-           <img src={this.props.pictureDisplayed} alt="dog" />
-           <button onClick= { () => this.newPicture()}> Smells bad</button>
-           <button onClick= { () => this.newPicture()}> Smells goooood!</button>
-           <button onClick= { () => this.like(this.props.pictureDisplayed)}>LIKE</button>
-       </div>
+  return (
+    <div className="PictureDisplayed">
+      <h1>Sniff me</h1>
+      <img src={this.props.pictureDisplayed} alt="dog" />
+      <div class="btn-grp">
+        <button className="smellsbad" onClick= { () => this.newPicture()}> Smells bad</button>
+        <button className="smellsgood" onClick= { () => this.newPicture()}> Smells goooood!</button>
+        <button className="like" onClick= { () => this.like(this.props.pictureDisplayed)}>LIKE :)</button>
+      </div>
+    </div>
    );
 }
 }

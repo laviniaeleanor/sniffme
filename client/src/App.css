@@ -1,21 +1,86 @@
-@font-face {
-    font-family: 'Crayon';
-    src: url('./DK_Cool_Crayon.ttf');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+  background: #ddd;
 }
 
 h1 {
-    font-family: 'Crayon';
-    color: #000;
-    font-weight: lighter;
-    font-size: 90px;
+    font-family: 'Bree Serif', serif;
+    color: #efefef;
+    font-size: 65px;
+    line-height: 1;
     text-align: center;
-    margin: 40px;
+    margin: 0 0 10px 0;
+    padding: 20px;
+}
+
+.page {
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
 }
 
 .PictureDisplayed {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 550px;
     margin: auto;
+    text-align: center;
+    background: #333;
+    padding: 0px 30px 30px 30px;
+    margin-top: 5px;
+    border: 1px solid #DDDDDD;
+    overflow: auto;
+}
+
+.PictureDisplayed img {
+  border-radius: 10px;
+  width: auto;
+  height: 350px;
+  margin: 0 auto;
+  border: 5px solid #333;
+}
+
+.PictureDisplayed .btn-grp {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 20px;
+}
+
+
+.PictureDisplayed button {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 400;
+  background-color: #2c6eb7;
+  margin-right: 15px;
+  border-radius: 2px;
+  font-size: 1em;
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  outline: none;
+}
+
+.PictureDisplayed button:hover {
+  opacity: 0.8;
+  transition: opacity ease-in-out 0.2s;
+}
+
+.PictureDisplayed button:last-child {
+  margin-right: 0;
+}
+
+
+.PictureDisplayed .smellsbad {
+  background-color: #c5465c;
+}
+
+.PictureDisplayed .like {
+  border-radius: 100px;
+  padding: 20px 20px;
+  color: #2c6eb7;
+  background-color: #fff;
 }
 
 img {
