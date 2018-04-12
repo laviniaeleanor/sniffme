@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 // import PropTypes from ‘prop-types’
 import { connect } from 'react-redux'
-import {newPicture} from '../actions/actions'
+import {newPicture, like} from '../actions/actions'
 
 
 export class PictureDisplayed extends PureComponent {
@@ -14,6 +14,10 @@ export class PictureDisplayed extends PureComponent {
     this.props.newPicture()
   }
 
+  like = (breed) => {
+      this.props.like(breed)
+  }
+
  render() {
 
    return (
@@ -21,6 +25,7 @@ export class PictureDisplayed extends PureComponent {
            <img src={this.props.pictureDisplayed} alt="dog" />
            <button onClick= { () => this.newPicture()}> Smells bad</button>
            <button onClick= { () => this.newPicture()}> Smells goooood!</button>
+           <button onClick= { () => this.like(this.props.pictureDisplayed)}>LIKE</button>
        </div>
    );
 }
@@ -30,4 +35,4 @@ function mapStateToProps(state) {
  return {pictureDisplayed: state.pictureDisplayed}
 }
 
-export default connect(mapStateToProps, {newPicture})(PictureDisplayed)
+export default connect(mapStateToProps, {newPicture, like})(PictureDisplayed)

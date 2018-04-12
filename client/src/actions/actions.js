@@ -15,3 +15,11 @@ export const newPicture = () => (dispatch) => {
     }))
     .catch(err => alert(err))
 }
+
+export const like = (breed) => {
+
+    return {
+     type: LIKE,
+     payload: breed,
+ }
+}
