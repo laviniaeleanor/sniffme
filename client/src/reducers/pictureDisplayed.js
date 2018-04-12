@@ -5,7 +5,7 @@ const initialState = "https://www.what-dog.net/Images/faces2/main008.jpg"
 export default (state = initialState, action) => {
   switch (action.type) {
     case NEW_PICTURE :
-        return action.payload.message
+        return action.payload
 
 
     default :
