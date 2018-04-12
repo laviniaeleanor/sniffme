@@ -1,26 +1,33 @@
 import React, { PureComponent } from 'react'
-// import PropTypes from 'prop-types'
+// import PropTypes from ‘prop-types’
 import { connect } from 'react-redux'
 import {newPicture} from '../actions/actions'
 
+
 export class PictureDisplayed extends PureComponent {
 
-  componentWillMount() {
-     this.props.newPicture()
-   }
+ componentWillMount() {
+    this.props.newPicture()
+  }
 
-  render() {
+  newPicture = () => {
+    this.props.newPicture()
+  }
 
-    return (
-        <div className="PictureDisplayed">
-            <img src={this.props.pictureDisplayed} alt="dog" />
-        </div>
-    );
+ render() {
+
+   return (
+       <div className="PictureDisplayed">
+           <img src={this.props.pictureDisplayed} alt="dog" />
+           <button onClick= { () => this.newPicture()}> Smells bad</button>
+           <button onClick= { () => this.newPicture()}> Smells goooood!</button>
+       </div>
+   );
 }
 }
 
 function mapStateToProps(state) {
-  return {pictureDisplayed: state.pictureDisplayed}
+ return {pictureDisplayed: state.pictureDisplayed}
 }
 
 export default connect(mapStateToProps, {newPicture})(PictureDisplayed)
