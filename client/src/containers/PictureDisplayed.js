@@ -24,8 +24,7 @@ export class PictureDisplayed extends PureComponent {
        <div className="PictureDisplayed">
            <img src={this.props.pictureDisplayed} alt="dog" />
            <button onClick= { () => this.newPicture()}> Smells bad</button>
-           <button onClick= { () => this.newPicture()}> Smells goooood!</button>
-           <button onClick= { () => this.like(this.props.pictureDisplayed)}>LIKE</button>
+           <button onClick= {() => { this.newPicture(); this.like(this.props.pictureDisplayed);}}> Smells goooood!</button>
        </div>
    );
 }
