@@ -17,7 +17,8 @@ class MatchedUser extends PureComponent {
        <div className="PictureDisplayed">
            <Link to={ `/sniffme` }> <h1>Sniff me</h1> </Link>
            <h2>You matched with John!</h2>
-           <img src="https://media.giphy.com/media/bQw8H21KxyPrG/giphy.gif" />
+           <h3>🐶 You liked {this.props.preferencesCurrentUser.length} dogs! 🐶</h3>
+           <img src="https://media.giphy.com/media/bQw8H21KxyPrG/giphy.gif" alt="gif"/>
        </div>
    );
 }
