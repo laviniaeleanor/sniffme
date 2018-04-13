@@ -24,6 +24,17 @@ h2 {
   padding: 0px 20px 20px 0px;
 }
 
+h3 {
+  font-family: 'Bree Serif', serif;
+  color: #efefef;
+  font-size: 20px;
+  font-weight:200;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0px 20px 20px 0px;
+}
+
 .page {
   max-width: 500px;
   max-height: 500px;
