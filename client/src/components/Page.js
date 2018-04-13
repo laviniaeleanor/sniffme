@@ -11,7 +11,6 @@ export default class Page extends Component {
   render() {
     return (
         <div className="Page">
-            <h1>Sniff me</h1>
             <PictureDisplayed />
         </div>
     )
