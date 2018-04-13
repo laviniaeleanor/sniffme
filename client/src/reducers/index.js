@@ -1,9 +1,9 @@
 import pictureDisplayed from "./pictureDisplayed"
 import preferencesCurrentUser from "./preferencesCurrentUser"
-import preferencesOtherUser from "./preferencesOtherUser"
+import matchedUser from "./matchedUser"
 
 export default {
     pictureDisplayed,
     preferencesCurrentUser,
-    preferencesOtherUser
+    matchedUser
 }

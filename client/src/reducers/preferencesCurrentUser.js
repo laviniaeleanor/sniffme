@@ -2,7 +2,6 @@
 //import {PictureDisplayed}  from './containers/PictureDisplayed'
 import {LIKE} from '../actions/actions'
 
-
 const initialState = {}
 
 export default (state = initialState, action) => {
@@ -15,11 +14,10 @@ export default (state = initialState, action) => {
 
     const breed = name[4]
     console.log(breed)
-    
+
 
 
     return [...state, breed]
-
 
 
     default:
