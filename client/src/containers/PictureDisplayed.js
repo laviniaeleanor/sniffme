@@ -36,6 +36,9 @@ export class PictureDisplayed extends PureComponent {
            <button className="smellsgood" onClick= {() => { this.like(this.props.pictureDisplayed); this.newPicture()}}> Smells goooood!</button>
            <button className="FindAMatch" >Find a Match</button>
         </div>
+        <audio controls autoplay className="audiofeature">
+        <source src="http://burlingtonpetservices.com/media/Baha_Men_-_Who_Let_The_Dogs_Out.mp3" type="audio/mpeg"></source>
+        </audio>
        </div>
    );
 }

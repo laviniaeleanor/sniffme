@@ -3,9 +3,7 @@ import Page from './components/Page'
 import MatchPage from './components/MatchPage'
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
-import MatchPage from './components/MatchPage'
-
-
+// import MatchPage from './components/MatchPage'
 
 
 class App extends Component {
