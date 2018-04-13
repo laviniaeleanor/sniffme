@@ -18,16 +18,23 @@ export class PictureDisplayed extends PureComponent {
       this.props.like(breed)
   }
 
+
+
  render() {
+   const step1 = this.props.pictureDisplayed
+   const name = step1.split("/")
+   const breed = name[4]
 
    return (
        <div className="PictureDisplayed">
            <h1>Sniff me</h1>
+           <h2>{breed}</h2>
+
            <img src={this.props.pictureDisplayed} alt="dog" />
            <div class="btn-grp">
            <button className="smellsbad" onClick= { () => this.newPicture()}> Smells bad</button>
            <button className="smellsgood" onClick= {() => { this.like(this.props.pictureDisplayed); this.newPicture()}}> Smells goooood!</button>
-        </div>       
+        </div>
        </div>
    );
 }

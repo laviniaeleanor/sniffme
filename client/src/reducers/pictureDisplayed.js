@@ -1,6 +1,6 @@
 import { NEW_PICTURE } from '../actions/actions'
 
-const initialState = "https://www.stonewallproductions.co.nz/images/425444/progress_bar_dog.gif"
+const initialState = "https://bit.ly/2EHdZDn"
 
 
 export default (state = initialState, action) => {

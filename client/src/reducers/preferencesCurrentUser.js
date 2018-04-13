@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
 
     const breed = name[4]
     console.log(breed)
-
+    
 
 
     return [...state, breed]
