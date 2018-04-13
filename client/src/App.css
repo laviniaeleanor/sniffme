@@ -86,6 +86,11 @@ h2 {
 .PictureDisplayed .smellsbad {
   background-color: #c5465c;
 }
+.PictureDisplayed .FindAMatch {
+background-color: #efefef;
+color: #333;
+border-radius: 50px;
+}
 
 .PictureDisplayed .like {
   border-radius: 100px;
