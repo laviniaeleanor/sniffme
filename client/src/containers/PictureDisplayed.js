@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 // import PropTypes from ‘prop-types’
 import { connect } from 'react-redux'
 import {newPicture, like} from '../actions/actions'
+import { Link } from 'react-router-dom'
 
 
 export class PictureDisplayed extends PureComponent {
@@ -34,7 +35,7 @@ export class PictureDisplayed extends PureComponent {
            <div class="btn-grp">
            <button className="smellsbad" onClick= { () => this.newPicture()}> Smells bad</button>
            <button className="smellsgood" onClick= {() => { this.like(this.props.pictureDisplayed); this.newPicture()}}> Smells goooood!</button>
-           <button className="FindAMatch" >Find a Match</button>
+           <button className="FindAMatch" ><Link to={ `/sniffme/matchuser` }> FindMatch! </Link></button>
         </div>
        </div>
    );
