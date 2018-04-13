@@ -34,6 +34,7 @@ export class PictureDisplayed extends PureComponent {
            <div class="btn-grp">
            <button className="smellsbad" onClick= { () => this.newPicture()}> Smells bad</button>
            <button className="smellsgood" onClick= {() => { this.like(this.props.pictureDisplayed); this.newPicture()}}> Smells goooood!</button>
+           <button className="FindAMatch" >Find a Match</button>
         </div>
        </div>
    );
