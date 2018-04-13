@@ -30,12 +30,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(MatchedUser)
-
-// <h2> Your favorite breeds are: </h2>
-// <tbody>
-// { this.state.preferencesCurrentUser.map(dog => (<tr>
-//   <td>
-//       <h2>{dog}</h2>
-//     </td>
-// </tr>)) }
-// </tbody>
