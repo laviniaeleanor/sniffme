@@ -21,7 +21,7 @@ class MatchedUser extends PureComponent {
 }
 
 function mapStateToProps(state) {
- return {matchedUser: state.matchedUser}
+ return {matchedUser: state.matchedUser, preferencesCurrentUser: state.preferencesCurrentUser}
 }
 
 export default connect(mapStateToProps)(MatchedUser)
